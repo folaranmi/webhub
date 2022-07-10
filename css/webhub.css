@@ -82,6 +82,43 @@ html{
     color: rgba(23, 23, 23, 0.7);
 }
 
+.hero__text .form{
+    display: flex;
+    position: relative;
+}
+
+.hero__text .form .input{
+    
+    width: 100%;
+    font-size: 18px;
+    margin-top: 40px;
+    color: rgba(23, 23, 23, 1);
+    padding: 15px 170px 15px 20px;
+    border-radius: 4px;
+    border: 2px solid #DE9492;
+}
+
+.hero__text .form .input::placeholder{
+    color: rgba(23, 23, 23, 0.32);
+}
+
+.hero__text .form .btn-getstarted{
+    position: absolute;
+    right: 5px;
+    top: 45px;
+
+    background-color: #A43632;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 15px 40px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.hero__text .form .btn-getstarted:hover{
+    background-color: #ea6e6a;
+}
 
 .hero__images{
     flex-basis: 50%;
@@ -105,3 +142,55 @@ html{
     left: 236px;
 }
 
+
+
+
+/* Who we are section */
+
+.who-we-are{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 86px 0;
+
+    background: linear-gradient(119.32deg, #FFFFFF -47.61%, #FDFAF7 129.23%, #FDFAF7 129.23%), #FDFAF7;
+    box-shadow: 0px -2px 4px rgba(23, 23, 23, 0.1);
+}
+
+.who-we-are .imagebox{
+    flex-basis: 40%;
+}
+
+.who-we-are .textbox{
+    flex-basis: 50%;
+    font-size: 18px;
+    line-height: 200%;
+    color: #171717;
+}
+
+.who-we-are .text{
+    margin-top: 30px;
+}   
+
+
+
+/* Custom Styles */
+.custom-heading{
+    font-size: 28px;
+    color: #171717;
+    font-weight: 500;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 0;
+
+}
+
+.custom-heading::before{
+    content: "";
+    width: 100%;
+    height: 13px;
+    background-color: #F0D9C2;
+    position: absolute;
+    z-index: -1;
+    bottom: 10px;
+}
