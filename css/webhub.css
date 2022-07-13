@@ -214,6 +214,15 @@ html{
     line-height: 21.6px;
 }
 
+/* --------- Pricing section --------- */
+
+.pricing{
+    margin: 0 0 100px 0;
+}
+
+
+
+
 
 /* Generic Style rules */
 .custom-heading{
