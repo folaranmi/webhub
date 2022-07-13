@@ -172,9 +172,50 @@ html{
     margin-top: 30px;
 }   
 
+/*--------- Services section ------ */
+
+.services{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin-top: 101px;
+}
+
+.services__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.services__container .servicebox{
+    flex-basis: 30%;
+    border: 2px solid rgba(237, 203, 192, .2);
+    filter: drop-shadow(0px 1px 2px rgba(23, 23, 23, 0.1));
+    border-radius: 4px;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.servicebox .icon{
+    height: 40px;
+}
+
+.servicebox .heading{
+    margin: 13px 0 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.servicebox .description{
+    font-size: 14px;
+    color: #666666;
+    line-height: 21.6px;
+}
 
 
-/* Custom Styles */
+/* Generic Style rules */
 .custom-heading{
     font-size: 28px;
     color: #171717;
@@ -193,4 +234,23 @@ html{
     position: absolute;
     z-index: -1;
     bottom: 10px;
+}
+
+.wb-title{
+    text-align: center;
+}
+
+.wb-subtitle{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    width: 100%;
+    max-width: 558px;
+}
+
+.wb-textbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
