@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -219,6 +219,72 @@ html{
 .pricing{
     margin: 0 0 100px 0;
 }
+.pricing__container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+
+}
+.pricing__box{
+    flex-basis: 32.5%;
+    border: 1px solid rgba(23, 23, 23, 0.03);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.pricing__box .price{
+    color: #171717;
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.pricing__box .month{
+    font-weight: 400;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pricing__box .plan{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.pricing__box .plan__desc{
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 24px;
+    min-height: 70px;
+}
+
+.pricing__box .features{
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.pricing__box .features li{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -262,4 +328,49 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.btn{
+    
+    border-radius: 4px;
+    padding: 10px 50px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline;
+}
+
+.btn:hover{
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary{
+    background-color: #A43632;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover{
+    background-color: #F3E7D8;
+    color: #A43632;
+    border: 1px so;
+}
+
+.btn-primary-outline{
+    background-color: #ffffff;
+    border: 1px solid #F3E7D8;
+    color: #A43632;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary-outline:hover{
+    background-color: #F3E7D8;
+    border: 1px solid #A43632;
+    color: #A43632;
+}
+
+.centralize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
